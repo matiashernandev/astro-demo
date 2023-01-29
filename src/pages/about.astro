@@ -1,6 +1,10 @@
 ---
-const title = "Esta es la ventaja de Astro" // esto no va a dist
+import Layout from "../components/Layout.astro";
+
+const title = "Esta es la ventaja de Astro"; // esto no va a dist
 ---
 
-<!-- Esto sí -->
-<h1>{title}</h1>
+<Layout>
+    <!-- Esto sí -->
+    <h1>{title}</h1>
+</Layout>
