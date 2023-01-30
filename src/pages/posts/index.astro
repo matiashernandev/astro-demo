@@ -1,13 +1,12 @@
 ---
 import Layout from "../../components/Layout.astro";
-
+import img from "../../img/toonlink.jpg";
 const posts = await Astro.glob("../posts/*.md");
-
-console.log(posts);
 ---
 
 <Layout>
     <h1>Los posts</h1>
+    <img src={img} alt="" />
     {
         posts.map((post) => {
             return (
